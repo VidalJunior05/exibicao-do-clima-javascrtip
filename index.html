@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="images/weather.ico" type="image/x-icon">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+<body>
+    
+    <h1><i class="fas fa-cloud-sun"></i>&nbsp;Clima</h1>
+
+    <form class="busca">
+        <input type="search" id="searchInput" />
+        <button>Buscar</button>
+    </form>
+
+    <div class="resultado">
+        <div class="titulo">--</div>
+
+        <div class="info">
+            <div class="temp">
+                <div class="tempTitulo"><i class="fas fa-temperature-low"></i>&nbsp;Temperatura</div>
+                <div class="tempInfo">-- <sup>ºC</sup></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo"><i class="fas fa-wind"></i> &nbsp;Vento</div>
+                <div class="ventoInfo">-- <span>km/h</span></div>
+                <div class="ventoArea">
+                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="infoAdicionais">
+            <div class="umidadeTitulo"><i class="fas fa-percentage"></i> &nbsp;Umidade</div> 
+            <div class="umidadeInfo"> -- <span>%</span></div>
+        </div>
+        <div class="data">
+            <div class="relogio-digital"></div>
+            <div class="data-atual"></div>
+        </div>
+    </div>
+
+    <div class="aviso"></div>
+
+    <footer>Criado e Adaptado por Vidal Júnior, durante o desafio 7 projetos em 7 dias, da B7Web.</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
